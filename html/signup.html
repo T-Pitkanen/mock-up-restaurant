@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/c485bc7976.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/signup.css" />
+		<title>Le Goût Infini - Sign In</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header container">
+				<a href="main.html">
+					<img class="logo" src="logo.png" alt="clubs logo" />
+				</a>
+
+				<nav class="main-menu">
+					<ul class="main-menu-ul">
+						<li class="main-menu-li"><a href="menu.html">MENU</a></li>
+						<li class="main-menu-li">
+							<a class="menu-book" href="booking.html">BOOK A TABLE</a>
+						</li>
+						<li class="main-menu-li">
+							<a href="facilities.html">FACILITIES</a>
+						</li>
+
+						<div class="dropdown">
+							<button class="dropbtn">
+								<a class="menu-gourmet" href="club.html">GOURMET CLUB</a>
+								<i class="fa fa-caret-down arrow-down"></i>
+							</button>
+							<div class="dropdown-content">
+								<a href="login.html">Log In</a>
+								<a href="signup.html">Sign Up</a>
+							</div>
+						</div>
+
+						<li class="main-menu-li"><a href="contact.html">CONTACT</a></li>
+					</ul>
+
+					<div class="login-signup">
+						<div class="login-link"><a href="login.html">Log In </a></div>
+						<div class="signup-link"><a href="signup.html">Sign Up</a></div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!---------  MOBILE ------------>
+
+		<header id="mobile" class="header-mobile">
+			<a href="main.html">
+				<img class="logo" src="logo.png" alt="clubs logo" />
+			</a>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+					>&times;</a
+				>
+				<a href="menu.html">Menu</a>
+				<a href="booking.html">Booking</a>
+				<a href="facilities.html">Facilities</a>
+				<a href="club.html">Gourmet Club</a>
+				<a href="contact.html">Contact</a>
+				<a href="login.html">Log In</a>
+				<a href="signup.html">Sign Up</a>
+			</div>
+
+			<span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
+		</header>
+
+		<div class="image-div">
+			<img src="frontimg.medium copy.jpg" alt="header banner image of a restaurant dish" />
+		</div>
+
+		<main>
+			<form class="signup-form" action="#">
+				<div class="signup-container">
+					<h1>Sign Up</h1>
+					<p>
+						Please fill in this form to create <br />
+						a Gourmet Club account.
+					</p>
+
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required />
+
+					<label for="psw-signup"><b>Password</b></label>
+					<input
+						type="password"
+						placeholder="Enter Password"
+						name="psw-signup"
+						required
+					/>
+
+					<label for="psw-repeat"><b>Repeat Password</b></label>
+					<input
+						type="password"
+						placeholder="Repeat Password"
+						name="psw-repeat"
+						required
+					/>
+
+					<label>
+						<input type="checkbox" checked="checked" name="remember" />
+						Remember me
+					</label>
+
+					<p style="padding-top: 1em">
+						By creating an account you agree to our
+						<a href="#" style="color: rgb(40, 116, 191)">Terms & Privacy</a>.
+					</p>
+
+					<div class="clearfix">
+						<button type="submit" class="signupbtn">Sign Up</button>
+					</div>
+				</div>
+			</form>
+		</main>
+
+		<hr />
+
+		<footer>
+			<div class="address">
+				<b>
+					Gourmet Club - <br />
+					Le Goût Infini <br />
+					Skaldehøjvej 2 <br />
+					8800 Viborg <br />
+					tlf.: +45 86 67 50 55 <br />
+					mail: info@gcgi.dk
+				</b>
+
+				<div class="icons">
+					<a
+						href="https://www.gmail.com
+"
+						><i class="fa-regular fa-envelope"></i
+					></a>
+					<a
+						href="https://www.instagram.com
+"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+					<a
+						href="https://www.facebook.com
+"
+						><i class="fa-brands fa-facebook"></i
+					></a>
+				</div>
+			</div>
+
+			<div class="copyright"><b>Ⓒ Le Goût Infini</b></div>
+			<div class="opening-hours">
+				<ul class="opening-hours-ul">
+					<li><b>Mon</b> &nbsp; Closed</li>
+					<li><b>Tue</b> &nbsp; 18:00 - 22:00</li>
+					<li><b>Wed</b> &nbsp;18:00 - 22:00</li>
+					<li><b>Thur</b>&nbsp; 18:00 - 22:00</li>
+					<li><b>Fri</b> &nbsp;&nbsp;&nbsp;18:00 - 24:00</li>
+					<li><b>Sat</b> &nbsp;&nbsp;18:00 - 24:00</li>
+					<li><b>Sun</b> &nbsp; 18:00 - 21:00</li>
+				</ul>
+			</div>
+		</footer>
+		<script>
+			function openNav() {
+				document.getElementById('mySidenav').style.width = '250px';
+				document.getElementById('main').style.marginLeft = '250px';
+			}
+
+			function closeNav() {
+				document.getElementById('mySidenav').style.width = '0';
+				document.getElementById('main').style.marginLeft = '0';
+			}
+		</script>
+	</body>
+</html>

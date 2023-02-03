@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: left;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+}

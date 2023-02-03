@@ -1,0 +1,627 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.2;
+	text-align: left;
+	background-color: black;
+}
+
+main {
+	padding-bottom: 3em;
+}
+/********************* HEADER ********* ******/
+
+.header {
+	display: flex;
+	width: 100%;
+	height: 150px;
+}
+
+.header-mobile {
+	display: none;
+}
+
+.logo {
+	padding-left: 5em;
+	height: 150px;
+}
+
+.main-menu,
+.main-menu-li,
+.main-menu-ul {
+	display: flex;
+	list-style: none;
+	width: 80%;
+	justify-content: space-evenly;
+	align-items: center;
+	font-weight: 400;
+}
+
+.main-menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.main-menu a:hover {
+	color: grey;
+	transition: all 0.2s;
+}
+
+.dropdown {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #c3ad33;
+	color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.login-signup {
+	display: none;
+}
+/*********************** FRONTIMAGE *****************/
+
+.main-mid {
+	width: 100%;
+}
+
+.image-div img {
+	width: 100%;
+	height: 25vh;
+	object-fit: cover;
+	object-position: 50% 52%;
+}
+
+.image-div {
+	position: relative;
+	text-align: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/******************** GALLERY ****************/
+
+.facilities {
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	padding-top: 1em;
+	font-size: 2.5em;
+}
+
+.gallery-container img {
+	width: 1000px;
+	height: 80vh;
+	object-fit: cover;
+}
+
+.gallery-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.slides {
+	margin-top: 50px;
+	display: none;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+	color: white;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/****************** 	FOOTER  ***************/
+
+footer {
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 250px;
+	display: flex;
+	padding-right: 5em;
+	padding-top: 7em;
+	padding-bottom: 1.5em;
+	align-items: center;
+	justify-content: center;
+	gap: 300px;
+}
+
+.address {
+	color: white;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	margin-left: 5em;
+}
+
+.copyright {
+	color: white;
+	letter-spacing: 2px;
+	align-self: flex-end;
+}
+
+.opening-hours {
+	text-align: left;
+	color: white;
+	line-height: 1.75;
+	letter-spacing: 2px;
+	padding-top: 2em;
+	padding-bottom: 4em;
+}
+
+.opening-hours-ul {
+	list-style: none;
+}
+
+.icons {
+	font-size: 2em;
+	padding-top: 1em;
+	display: flex;
+	gap: 25px;
+	justify-content: flex-start;
+}
+
+.icons a {
+	color: white;
+}
+
+/********************** MOBILE SMALL ****************************/
+
+@media (max-width: 377px) and (min-width: 360px) {
+	.header {
+		display: none;
+	}
+
+	/************************' RESPONSIVE NAV **************/
+
+	.header-mobile {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.fa-solid {
+		color: #9e9985;
+		font-size: 1.5rem;
+		display: block;
+		margin-right: 1em;
+		margin-top: 1em;
+	}
+
+	.sidenav {
+		text-align: left;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(0, 0, 0); /* Black*/
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #9e9985;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	.logo {
+		height: 80px;
+		width: 100px;
+		padding: 0;
+		margin-left: 1em;
+	}
+	/********************* GALLERY *****************/
+
+	.facilities {
+		font-size: 1.3em;
+		margin-top: 1em;
+		padding: 0;
+	}
+
+	.gallery-container {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.gallery-container img {
+		width: 100%;
+		height: 30vh;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+	}
+
+	/********************* FOOTER *****************/
+
+	footer {
+		height: 100px;
+		width: 100%;
+		gap: 50px;
+		font-size: 9px;
+		justify-content: space-evenly;
+		padding-right: 0em;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.opening-hours {
+		margin-top: 2em;
+		margin-right: 2em;
+		padding: 0;
+		padding-right: 1em;
+		line-height: 1.6;
+	}
+
+	.address {
+		margin-top: 18em;
+		margin-bottom: 5.5em;
+	}
+
+	.icons {
+		gap: 15px;
+		margin-bottom: 3em;
+	}
+}
+
+/****************** MOBILE MEDIUM-LARGE ***************************/
+
+@media (max-width: 430px) and (min-width: 378px) {
+	.header {
+		display: none;
+	}
+	/*************** RESPONSIVE NAV ***********/
+	.header-mobile {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.fa-solid {
+		color: #9e9985;
+		font-size: 1.5rem;
+		display: block;
+		margin-right: 1em;
+		margin-top: 1em;
+	}
+
+	.sidenav {
+		text-align: left;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(0, 0, 0); /* Black*/
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #9e9985;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	.logo {
+		height: 80px;
+		width: 100px;
+		padding: 0;
+		margin-left: 1em;
+	}
+
+	/*********************** GALLERY *****************/
+
+	.facilities {
+		font-size: 1.5em;
+		padding: 0;
+		margin-top: 1em;
+	}
+
+	.gallery-container {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.gallery-container img {
+		width: 100%;
+		height: 30vh;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+	}
+
+	/************************ FOOTER ******************/
+	footer {
+		height: 100px;
+		width: 100%;
+		gap: 50px;
+		font-size: 9px;
+		justify-content: space-evenly;
+		padding-right: 0em;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.opening-hours {
+		margin-top: 4em;
+		line-height: 1.6;
+	}
+
+	.address {
+		margin-top: 18em;
+		margin-bottom: 5.5em;
+		margin-left: 0;
+	}
+
+	.icons {
+		gap: 15px;
+		margin-bottom: 3em;
+	}
+}
+
+/********************** TABLET *********************/
+
+@media (max-width: 1000px) and (min-width: 750px) {
+	.logo {
+		height: 90px;
+		width: 90px;
+		padding: 0;
+		padding-bottom: 0.5em;
+	}
+
+	.dropdown-content a {
+		display: none;
+	}
+
+	.header {
+		height: 80px;
+		justify-content: space-evenly;
+	}
+
+	.main-menu-ul {
+		width: 400px;
+	}
+	.main-menu a {
+		font-size: 10px;
+		text-align: center;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 7px;
+		margin-top: 6px;
+	}
+
+	.languages {
+		display: none;
+	}
+
+	.login-signup {
+		display: flex;
+		text-transform: uppercase;
+		line-height: 0.5;
+	}
+
+	.login-signup a {
+		font-size: 10px;
+	}
+
+	.login-signup {
+		margin-left: 8px;
+		gap: 10px;
+	}
+
+	.menu-book {
+		padding-top: 6px;
+	}
+
+	.arrow-down {
+		display: none;
+	}
+
+	/****************** GALLERY *****************/
+
+	.facilities {
+		margin-top: 1em;
+		font-size: 2em;
+	}
+
+	.gallery-container {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.gallery-container img {
+		width: 100%;
+		height: 40vh;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+	}
+
+	/************************ FOOTER ************/
+
+	footer {
+		height: 100px;
+		width: 100%;
+		gap: 50px;
+		font-size: 14px;
+		justify-content: space-between;
+		padding-left: 2em;
+		padding-right: 2em;
+		margin-top: 4em;
+	}
+
+	.opening-hours {
+		margin-bottom: 2em;
+		padding: 0;
+		padding-right: 3em;
+		line-height: 1.7;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	.address {
+		margin-top: 18em;
+		margin-bottom: 10em;
+		line-height: 1.7;
+	}
+
+	.icons {
+		gap: 15px;
+		margin-bottom: 3em;
+	}
+}
