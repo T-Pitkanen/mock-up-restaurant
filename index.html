@@ -12,32 +12,21 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/default.css" />
+
+		<link rel="stylesheet" href="style/index.css" />
+		<link rel="stylesheet" href="style/default.css" />
+		<link rel="stylesheet" href="style/responsive.css" />
 		<title>Le Goût Infini</title>
 	</head>
 	<body>
-		<header class="header">
+		<header>
 			<div class="header container">
-				<a href="index.html">
-					<img class="logo" src="assets/logo.png" alt="logo" />
-				</a>
-
 				<!-------- DESKTOP -------->
-				<nav class="main-menu">
-					<ul class="main-menu-ul">
+				<nav class="main-menu-container">
+					<ul class="main-menu-wrapper">
+						<a href="index.html">
+							<img class="logo" src="assets/logo.png" alt="logo" />
+						</a>
 						<li class="main-menu-li"><a href="html/menu.html">MENU</a></li>
 						<li class="main-menu-li">
 							<a class="menu-book" href="html/booking.html">BOOK A TABLE</a>
@@ -46,83 +35,97 @@
 							<a href="html/facilities.html">FACILITIES</a>
 						</li>
 
-						<div class="dropdown">
-							<button class="dropbtn">
-								<a class="menu-gourmet" href="html/club.html">GOURMET CLUB</a>
-								<i class="fa fa-caret-down arrow-down"></i>
-							</button>
-							<div class="dropdown-content">
-								<a href="html/login.html">Log In</a>
-								<a href="html/signup.html">Sign Up</a>
-							</div>
-						</div>
-
 						<li class="main-menu-li">
 							<a href="html/contact.html">CONTACT</a>
 						</li>
 					</ul>
-
-					<div class="login-signup">
-						<div class="login-link"><a href="html/login.html">Log In </a></div>
-						<div class="signup-link">
-							<a href="html/signup.html">Sign Up</a>
-						</div>
-					</div>
 				</nav>
 			</div>
-		</header>
 
-		<main class="main-mid">
 			<div class="hero-container">
 				<img src="assets/frontimg.medium copy.jpg" alt="" />
 				<div class="name-wrapper">
 					<h1 class="name-text">Le Goût Infini</h1>
 					<p class="under-text">Gourmet Club</p>
 				</div>
-				<!-- <h1 class="img-text">Le Goût Infini</h1>
-				<h2 class="img-text-under">Gourmet Club</h2> -->
+			</div>
+		</header>
+
+		<header id="mobile" class="header-mobile">
+			<a href="main.html">
+				<img class="logo" src="logo.png" alt="clubs logo" />
+			</a>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+					>&times;</a
+				>
+				<a href="menu.html">Menu</a>
+				<a href="booking.html">Booking</a>
+				<a href="facilities.html">Facilities</a>
+				<a href="club.html">Gourmet Club</a>
+				<a href="contact.html">Contact</a>
 			</div>
 
+			<span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
+		</header>
+
+		<!-- MAIN STARTS -->
+
+		<main class="main-container">
 			<section class="club-section">
 				<img src="assets/foodimg4.jpg" alt="" />
-				<p class="club-text">
-					At Gourmet Club - Le goût infini, we create an environment that is
-					only for the sublime palate.
-					<br />
-					<br />
-					We invite the world's best chefs to show their perception of
-					perfection.
-				</p>
-				<form class="form-btn" action="club.html">
-					<input class="join-btn" type="submit" value="Join The Club" />
-				</form>
+				<div class="club-text-container">
+					<div class="club-text-wrapper">
+						<p class="club-text">
+							At Gourmet Club - Le goût infini, we create an environment that is
+							only for the sublime palate.
+							<br />
+							<br />
+							We invite the world's best chefs to show their perception of
+							perfection.
+						</p>
+					</div>
+				</div>
 			</section>
 
 			<section class="menu-reserve-section">
-				<img src="assets/foodimg.jpg" alt="" />
-				<div class="menu-text"><a href="html/menu.html">Weeks Menu</a></div>
-				<img src="assets/facilities3.jpg" alt="" />
-				<div class="reserve-text">
-					<a href="html/booking.html"> Book a Table</a>
+				<div class="menu-reserve-container">
+					<div class="menu-wrapper">
+						<img src="assets/foodimg.jpg" alt="" />
+						<div class="menu-text">
+							<a href="./html/menu.html"> Weeks Menu </a>
+						</div>
+					</div>
+					<div class="booking-wrapper">
+						<img src="assets/facilities3.jpg" alt="" />
+						<div class="booking-text">
+							<a href="html/booking.html"> Book a Table</a>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<section class="mailinglist-section">
-				<h3 class="mailinglist-h3">Join Our Mailinglist!</h3>
-				<p class="mailinglist-text">
-					Be the first to know our menus, events and who is our next quest chef
-					of the week.
-				</p>
-				<form class="mailinglist-form" action="#">
-					<label for="name">Your Name: </label> <br />
-					<input type="text" id="name" name="name" required /> <br />
-					<label for="email">Your Email: </label> <br />
-					<input type="text" name="email" name="name" required /> <br />
-					<input class="mailinglist-btn" type="submit" />
-				</form>
+				<div class="mailinglist-container">
+					<h3>Join Our Mailinglist!</h3>
+					<p class="mailinglist-text">
+						Become the first to learn about upcoming events and our weekly menu.
+					</p>
+					<form class="mailinglist-form" action="#">
+						<label for="name">Your Name: </label>
+						<input type="text" id="name" name="name" required />
+						<label for="email">Your Email: </label>
+						<input type="email" name="email" name="name" required />
+						<div class="submit-btn">
+							<input id="mailinglist-btn" type="submit" />
+						</div>
+					</form>
+				</div>
 			</section>
 		</main>
 		<hr />
+
+		<!---------- FOOTER ---------->
 		<footer>
 			<div class="address">
 				<b>
@@ -134,19 +137,13 @@
 					mail: info@gcgi.dk
 				</b>
 				<div class="icons">
-					<a
-						href="https://www.gmail.com
-"
+					<a href="https://www.gmail.com"
 						><i class="fa-regular fa-envelope"></i
 					></a>
-					<a
-						href="https://www.instagram.com
-"
+					<a href="https://www.instagram.com"
 						><i class="fa-brands fa-instagram"></i
 					></a>
-					<a
-						href="https://www.facebook.com
-"
+					<a href="https://www.facebook.com"
 						><i class="fa-brands fa-facebook"></i
 					></a>
 				</div>
