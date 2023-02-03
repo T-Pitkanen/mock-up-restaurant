@@ -1,0 +1,115 @@
+@media (max-width: 420px) and (min-width: 360px) {
+	.main-menu-wrapper li {
+		display: none;
+	}
+
+	.name-wrapper {
+		height: auto;
+		margin-bottom: 20%;
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+	}
+
+	.name-wrapper h1 {
+		font-size: 2em;
+	}
+
+	.name-wrapper p {
+		font-size: 1.5em;
+	}
+
+	.hero-container img {
+		height: 25vh;
+		object-position: top;
+	}
+
+	/* MID SECTION */
+
+	.club-section {
+		margin: 10%;
+	}
+
+	.club-section img {
+		width: 100%;
+		height: 40vh;
+	}
+
+	.club-text-wrapper {
+		width: 38vw;
+		padding-right: 3%;
+	}
+
+	.club-text {
+		font-size: 0.5em;
+		padding: 1em;
+		height: 25vh;
+	}
+
+	/********************** MENU AND RESERVE ******************/
+
+	.menu-reserve-container img {
+		height: 20vh;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.menu-text,
+	.booking-text {
+		padding: 1em;
+	}
+
+	.menu-text a,
+	.booking-text a {
+		font-size: 1em;
+	}
+
+	/**************** MAILINGLIST **************/
+
+	.mailinglist-section {
+		margin: 15% 0;
+	}
+
+	.mailinglist-container h3 {
+		font-family: var(--cursive);
+		font-size: 1.5em;
+	}
+
+	.mailinglist-text {
+		padding: 2em;
+		text-align: center;
+		font-size: 0.8em;
+	}
+
+	.mailinglist-form {
+		width: 80%;
+		font-size: 0.8em;
+	}
+
+	/****************** 	FOOTER ****************/
+
+	footer {
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+		padding: 0 5%;
+		font-size: 0.3em;
+	}
+
+	.address {
+		line-height: 1.7;
+		letter-spacing: 2px;
+	}
+
+	.copyright {
+		width: 20%;
+		text-align: center;
+		font-size: 7px;
+	}
+
+	.opening-hours {
+		padding-bottom: 15%;
+	}
+
+	.icons {
+		font-size: 1rem;
+	}
+}
