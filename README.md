@@ -1,4 +1,4 @@
-# Gourmet Reestaurant Page
+# Gourmet Restaurant Page
 
 A school project from Sep-Oct 2022. 
 
