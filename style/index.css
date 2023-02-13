@@ -1,66 +1,46 @@
 /*********************   MOBILE MENU **********************/
 
-#mobile {
+.header-mobile {
 	display: none;
-}
-.main-menu-mobile {
-	overflow: hidden;
-	background-color: rgb(248, 245, 245);
-	position: relative;
-}
-
-.main-menu-mobile #my-pages {
-	display: none;
-}
-
-.main-menu-mobile a {
-	color: white;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 25px;
-	display: block;
-}
-
-.main-menu-mobile a.icon {
-	background: rgb(255, 254, 254);
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.main-menu-mobile a:hover {
-	background-color: #ddd;
-	color: black;
 }
 
 /*********************** DESKTOP MENU ******************/
 
-.header-container {
-	width: 100%;
-	height: auto;
+.header {
 	display: flex;
+	width: 100%;
+	height: 150px;
+}
+
+.header-mobile {
+	display: none;
 }
 
 .logo {
-	width: 100%;
-	height: auto;
+	padding-left: 5em;
+	height: 150px;
 }
 
-.main-menu-wrapper {
-	height: 15vh;
+.main-menu,
+.main-menu-li,
+.main-menu-ul {
 	display: flex;
+	list-style: none;
+	width: 80%;
 	justify-content: space-evenly;
 	align-items: center;
+	font-weight: 400;
 }
 
-.main-menu-wrapper a {
-	font-size: 1.1em;
+.main-menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
 	letter-spacing: 2px;
 }
 
-.main-menu-wrapper a:hover {
-	color: var(--accent-color);
+.main-menu a:hover {
+	color: grey;
 	transition: all 0.2s;
 }
 
@@ -297,4 +277,182 @@ footer {
 	display: flex;
 	justify-content: flex-start;
 	gap: 1.5vw;
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 420px) and (min-width: 360px) {
+	.name-wrapper {
+		height: auto;
+		margin-bottom: 20%;
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+	}
+
+	.name-wrapper h1 {
+		font-size: 2em;
+	}
+
+	.name-wrapper p {
+		font-size: 1.5em;
+	}
+
+	.hero-container img {
+		height: 25vh;
+		object-position: top;
+	}
+
+	/* MOBILE NAV */
+
+	.header {
+		display: none;
+	}
+
+	/*************** RESPONSIVE NAV ***********/
+	.header-mobile {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.fa-solid {
+		color: #dad8d3;
+		font-size: 1.5rem;
+		display: block;
+		margin-right: 1em;
+		margin-top: 1em;
+	}
+
+	.sidenav {
+		text-align: left;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(0, 0, 0);
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #dbdbd8;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	.logo {
+		height: 80px;
+		width: 80px;
+		padding: 0;
+		margin-left: 1em;
+	}
+
+	/* MID SECTION */
+
+	.club-section {
+		margin: 10%;
+	}
+
+	.club-section img {
+		width: 100%;
+		height: 40vh;
+	}
+
+	.club-text-wrapper {
+		width: 38vw;
+		padding-right: 3%;
+	}
+
+	.club-text {
+		font-size: 0.5em;
+		padding: 1.3em;
+		height: 25vh;
+	}
+
+	/********************** MENU AND RESERVE ******************/
+
+	.menu-reserve-container img {
+		height: 20vh;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.menu-text,
+	.booking-text {
+		padding: 1em;
+	}
+
+	.menu-text a,
+	.booking-text a {
+		font-size: 1em;
+	}
+
+	/**************** MAILINGLIST **************/
+
+	.mailinglist-section {
+		margin: 15% 0;
+	}
+
+	.mailinglist-container h3 {
+		font-family: var(--cursive);
+		font-size: 1.5em;
+	}
+
+	.mailinglist-text {
+		padding: 2em;
+		text-align: center;
+		font-size: 0.8em;
+	}
+
+	.mailinglist-form {
+		width: 80%;
+		font-size: 0.8em;
+	}
+
+	/****************** 	FOOTER ****************/
+
+	footer {
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+		padding: 0 5%;
+		font-size: 0.3em;
+	}
+
+	.address {
+		line-height: 1.7;
+		letter-spacing: 2px;
+	}
+
+	.copyright {
+		width: 20%;
+		text-align: center;
+		font-size: 7px;
+	}
+
+	.opening-hours {
+		padding-bottom: 15%;
+	}
+
+	.icons {
+		font-size: 1rem;
+	}
 }

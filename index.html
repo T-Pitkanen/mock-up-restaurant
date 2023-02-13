@@ -20,27 +20,47 @@
 	</head>
 	<body>
 		<header>
-			<div class="header container">
-				<!-------- DESKTOP -------->
-				<nav class="main-menu-container">
-					<ul class="main-menu-wrapper">
-						<a href="index.html">
-							<img class="logo" src="assets/logo.png" alt="logo" />
-						</a>
-						<li class="main-menu-li"><a href="html/menu.html">MENU</a></li>
-						<li class="main-menu-li">
-							<a class="menu-book" href="html/booking.html">BOOK A TABLE</a>
-						</li>
-						<li class="main-menu-li">
-							<a href="html/facilities.html">FACILITIES</a>
-						</li>
+			<header class="header">
+				<div class="header container">
+					<a href="../index.html">
+						<img class="logo" src="../assets/logo.png" alt="clubs logo" />
+					</a>
 
-						<li class="main-menu-li">
-							<a href="html/contact.html">CONTACT</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+					<nav class="main-menu">
+						<ul class="main-menu-ul">
+							<li class="main-menu-li"><a href="./html/menu.html">MENU</a></li>
+							<li class="main-menu-li">
+								<a class="menu-book" href="./html/booking.html">BOOK A TABLE</a>
+							</li>
+
+							<li class="main-menu-li">
+								<a href="./html/contact.html">CONTACT</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<!---------  MOBILE ------------>
+
+			<header class="header-mobile">
+				<a href="main.html">
+					<img class="logo" src="../assets/logo.png" alt=" clubs logo" />
+				</a>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+						>&times;</a
+					>
+					<a href="./html/menu.html">Menu</a>
+					<a href="./html/booking.html">Booking</a>
+
+					<a href="./html/club.html">Gourmet Club</a>
+					<a href="./html/contact.html">Contact</a>
+				</div>
+
+				<span onclick="openNav()"
+					><i class="fa-sharp fa-solid fa-bars"></i
+				></span>
+			</header>
 
 			<div class="hero-container">
 				<img src="assets/frontimg.medium copy.jpg" alt="" />
@@ -49,24 +69,6 @@
 					<p class="under-text">Gourmet Club</p>
 				</div>
 			</div>
-		</header>
-
-		<header id="mobile" class="header-mobile">
-			<a href="main.html">
-				<img class="logo" src="logo.png" alt="clubs logo" />
-			</a>
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-					>&times;</a
-				>
-				<a href="menu.html">Menu</a>
-				<a href="booking.html">Booking</a>
-				<a href="facilities.html">Facilities</a>
-				<a href="club.html">Gourmet Club</a>
-				<a href="contact.html">Contact</a>
-			</div>
-
-			<span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
 		</header>
 
 		<!-- MAIN STARTS -->
@@ -78,11 +80,12 @@
 					<div class="club-text-wrapper">
 						<p class="club-text">
 							At Gourmet Club - Le goût infini, we create an environment that is
-							only for the sublime palate.
+							for the sublime palate, and we invite the world's best chefs to
+							show their perception of perfection.
+
 							<br />
 							<br />
-							We invite the world's best chefs to show their perception of
-							perfection.
+							You are welcome to taste the best in Gourmet Club - Le goût infini
 						</p>
 					</div>
 				</div>
@@ -162,13 +165,14 @@
 			</div>
 		</footer>
 		<script>
-			function myFunction() {
-				var x = document.querySelector('#myLinks');
-				if (x.style.display === 'block') {
-					x.style.display = 'none';
-				} else {
-					x.style.display = 'block';
-				}
+			function openNav() {
+				document.getElementById('mySidenav').style.width = '250px';
+				document.getElementById('main').style.marginLeft = '250px';
+			}
+
+			function closeNav() {
+				document.getElementById('mySidenav').style.width = '0';
+				document.getElementById('main').style.marginLeft = '0';
 			}
 		</script>
 	</body>

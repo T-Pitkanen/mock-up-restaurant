@@ -8,26 +8,16 @@
 			src="https://kit.fontawesome.com/c485bc7976.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/booking.css" />
+
+		<link rel="stylesheet" href="../style/booking.css" />
+		<link rel="stylesheet" href="../style/default.css" />
 		<title>Le Goût Infini - Booking</title>
 	</head>
 	<body>
 		<header class="header">
 			<div class="header container">
-				<a href="main.html">
-					<img class="logo" src="logo.png" alt="clubs logo" />
+				<a href="../index.html">
+					<img class="logo" src="../assets/logo.png" alt="clubs logo" />
 				</a>
 
 				<nav class="main-menu">
@@ -36,28 +26,9 @@
 						<li class="main-menu-li">
 							<a class="menu-book" href="booking.html">BOOK A TABLE</a>
 						</li>
-						<li class="main-menu-li">
-							<a href="facilities.html">FACILITIES</a>
-						</li>
-
-						<div class="dropdown">
-							<button class="dropbtn">
-								<a class="menu-gourmet" href="club.html">GOURMET CLUB</a>
-								<i class="fa fa-caret-down arrow-down"></i>
-							</button>
-							<div class="dropdown-content">
-								<a href="login.html">Log In</a>
-								<a href="signup.html">Sign Up</a>
-							</div>
-						</div>
 
 						<li class="main-menu-li"><a href="contact.html">CONTACT</a></li>
 					</ul>
-
-					<div class="login-signup">
-						<div class="login-link"><a href="login.html">Log In </a></div>
-						<div class="signup-link"><a href="signup.html">Sign Up</a></div>
-					</div>
 				</nav>
 			</div>
 		</header>
@@ -65,8 +36,8 @@
 		<!---------  MOBILE ------------>
 
 		<header id="mobile" class="header-mobile">
-			<a href="main.html">
-				<img class="logo" src="logo.png" alt=" clubs logo" />
+			<a href="../index.html">
+				<img class="logo" src="../assets/logo.png" alt=" clubs logo" />
 			</a>
 			<div id="mySidenav" class="sidenav">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -74,18 +45,19 @@
 				>
 				<a href="menu.html">Menu</a>
 				<a href="booking.html">Booking</a>
-				<a href="facilities.html">Facilities</a>
+
 				<a href="club.html">Gourmet Club</a>
 				<a href="contact.html">Contact</a>
-				<a href="login.html">Log In</a>
-				<a href="signup.html">Sign Up</a>
 			</div>
 
 			<span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
 		</header>
 
 		<div class="image-div">
-			<img src="frontimg.medium copy.jpg" alt="header banner image of a restaurant dish" />
+			<img
+				src="../assets/frontimg.medium copy.jpg"
+				alt="header banner image of a restaurant dish"
+			/>
 		</div>
 
 		<main>
@@ -112,10 +84,6 @@
 						<div class="form-field">
 							<p>Your Email:</p>
 							<input type="email" placeholder="Your Email:" />
-						</div>
-						<div class="form-field">
-							<p>Your Club ID:</p>
-							<input type="text" placeholder="Your Club ID:" />
 						</div>
 						<div class="form-field">
 							<p>Date:</p>
