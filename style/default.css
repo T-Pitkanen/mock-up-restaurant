@@ -36,35 +36,3 @@ body {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
-
-/* NAVIGATION */
-
-/*********************** DESKTOP MENU ******************/
-
-.header-container {
-	width: 100%;
-	height: auto;
-	display: flex;
-}
-
-.logo {
-	width: 100%;
-	height: auto;
-}
-
-.main-menu-wrapper {
-	height: 15vh;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.main-menu-wrapper a {
-	font-size: 1.1em;
-	letter-spacing: 2px;
-}
-
-.main-menu-wrapper a:hover {
-	color: var(--accent-color);
-	transition: all 0.2s;
-}
